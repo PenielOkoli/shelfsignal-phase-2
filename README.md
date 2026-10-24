@@ -10,7 +10,7 @@ The Phase 2 submission demonstrates a strict output schema, typed React componen
 
 **Live app:** https://shelfsignal-phase-2.vercel.app
 
-Deployment is live. Sample plans and validation states work now. Live Groq generation awaits the owner’s API key and an end-to-end provider check. See [deployment status](docs/deployment.md).
+Deployment and live Groq generation are verified. Both supported locales produced valid plans that rendered through the actual React components. See [deployment status](docs/deployment.md) and [live verification evidence](docs/live-verification.json).
 
 - [Output schema](src/lib/schema.ts)
 - [Typed UI components](src/components/plan-view.tsx)

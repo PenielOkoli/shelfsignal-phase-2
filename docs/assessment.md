@@ -32,6 +32,7 @@ Verified on 24 October 2026:
 - Live home and guide pages returned HTTP 200.
 - Live API boundary checks passed for invalid input (400), foreign origin (403), wrong media type (415), oversized request (413), and missing key (503).
 - Live browser review confirmed the sample plan renders cards, a table, and checkboxes. Missing cards preserve the other sections and disable export. Invalid priorities replace the table only. Unexpected fields and truncated JSON produce the full fallback.
-- Remaining verification: live Groq generation after the owner supplies a key; mobile viewport and remaining interactive checks. Browser automation became unavailable during QA, so these are not claimed as completed.
+- Live Groq production requests passed for en-NG and en-GB. Both returned valid plans with three cards, three priorities, and three actions; actual React rendering accepted the responses. See `docs/live-verification.json`. One provider failure was observed before a successful retry.
+- Remaining manual QA: mobile viewport and remaining browser interactions. Browser automation became unavailable during QA, so these are not claimed as completed.
 
-Live-model verification remains separate from fixture tests. A fixture is never presented as evidence of a successful model request.
+Live-model verification is recorded separately from fixture tests. A fixture is never presented as evidence of a successful model request.
