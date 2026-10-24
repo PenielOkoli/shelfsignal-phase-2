@@ -6,7 +6,11 @@ The Phase 2 submission demonstrates a strict output schema, typed React componen
 
 ## Submission
 
-Repository and verified deployment links are recorded in [docs/deployment.md](docs/deployment.md) after publication.
+**Repository:** https://github.com/PenielOkoli/shelfsignal-phase-2
+
+**Live app:** https://shelfsignal-phase-2.vercel.app
+
+Deployment is live. Sample plans and validation states work now. Live Groq generation awaits the owner’s API key and an end-to-end provider check. See [deployment status](docs/deployment.md).
 
 - [Output schema](src/lib/schema.ts)
 - [Typed UI components](src/components/plan-view.tsx)

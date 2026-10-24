@@ -24,4 +24,14 @@
 
 ## Verification log
 
-Results will be recorded after the build, tests, browser QA, and deployment complete. Live-model verification is separately identified so a fixture cannot be mistaken for model output.
+Verified on 24 October 2026:
+
+- Strict TypeScript check passed.
+- All 20 automated tests passed, including actual React rendering tests.
+- Local production build and Vercel production build passed.
+- Live home and guide pages returned HTTP 200.
+- Live API boundary checks passed for invalid input (400), foreign origin (403), wrong media type (415), oversized request (413), and missing key (503).
+- Live browser review confirmed the sample plan renders cards, a table, and checkboxes. Missing cards preserve the other sections and disable export. Invalid priorities replace the table only. Unexpected fields and truncated JSON produce the full fallback.
+- Remaining verification: live Groq generation after the owner supplies a key; mobile viewport and remaining interactive checks. Browser automation became unavailable during QA, so these are not claimed as completed.
+
+Live-model verification remains separate from fixture tests. A fixture is never presented as evidence of a successful model request.

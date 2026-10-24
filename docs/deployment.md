@@ -2,7 +2,13 @@
 
 Vercel project: `shelfsignal-phase-2`, in the existing `penielokolis-projects` team.
 
-Verified public links and final results will be recorded after deployment.
+- Repository: https://github.com/PenielOkoli/shelfsignal-phase-2
+- Live production app: https://shelfsignal-phase-2.vercel.app
+- Environment settings: https://vercel.com/penielokolis-projects/shelfsignal-phase-2/settings/environment-variables
+
+Verified on 24 October 2026: Vercel production build succeeded; home and guide return HTTP 200. GROQ_MODEL=openai/gpt-oss-20b and AI_ENABLED=true are saved in Production, Preview, and Development. GROQ_API_KEY is still awaiting owner entry. Redeployment and real model verification will follow key setup.
+
+The deployed API correctly returns 400 for invalid input, 403 for a foreign Origin, 415 for non-JSON input, 413 for an oversized request, and 503 for missing provider configuration.
 
 ## Enable Groq
 
